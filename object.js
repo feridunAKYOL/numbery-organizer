@@ -33,7 +33,7 @@ const object = {
 		return this.numberyStrings.filter((num) => num % 2 === 0);
 	},
 	oddStrings: function() {
-		return this.numberyStrings.filter((num) => num % 2 === 1 || num % 2 === -1);
+		return this.numberyStrings.filter((num) => num % 2 !== 0 );
 	},
 	negativeStrings: function() {
 		return this.numberyStrings.filter((num) => num < 0);
